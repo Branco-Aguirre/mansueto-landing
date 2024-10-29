@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mi Portfolio</title>
+    <link rel="stylesheet" href="src/style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Mi Portfolio</h1>
+      <p>Bienvenido a mi espacio creativo</p>
+    </header>
+
+    <section class="portfolio">
+      <div class="project">
+        <img src="" alt="Proyecto 1" />
+        <h2>Proyecto 1</h2>
+        <p>Descripción breve del proyecto 1.</p>
+      </div>
+      <div class="project">
+        <img src="" alt="Proyecto 2" />
+        <h2>Proyecto 2</h2>
+        <p>Descripción breve del proyecto 2.</p>
+      </div>
+      <div class="project">
+        <img src="" alt="Proyecto 3" />
+        <h2>Proyecto 3</h2>
+        <p>Descripción breve del proyecto 3.</p>
+      </div>
+      <!-- Agrega más proyectos según sea necesario -->
+    </section>
+
+    <section class="contact-form">
+      <h2>Contacto</h2>
+      <form action="tu_script_de_envio.php" method="POST">
+        <input type="text" name="nombre" placeholder="Tu Nombre" required />
+        <input
+          type="email"
+          name="email"
+          placeholder="Tu Correo Electrónico"
+          required
+        />
+        <textarea
+          name="mensaje"
+          rows="5"
+          placeholder="Tu Mensaje"
+          required
+        ></textarea>
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+
+    <footer>
+      <p>&copy; 2024 Mi Nombre. Todos los derechos reservados.</p>
+      <p>
+        <a href="mailto:tuemail@ejemplo.com" style="color: #fff;">Contacto</a>
+      </p>
+    </footer>
+
+    <script>
+      document.getElementById('contactForm').addEventListener('submit', function(event) {
+          event.preventDefault(); // Previene el envío normal del formulario
+
+          // Aquí puedes añadir lógica para enviar el formulario si es necesario
+
+          alert('¡Gracias por tu mensaje! Te responderé lo antes posible.');
+          this.reset(); // Limpia el formulario
+      });
+    </script>
+  </body>
+</html>
